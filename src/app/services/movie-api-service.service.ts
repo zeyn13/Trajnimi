@@ -21,6 +21,14 @@ export class MovieApiServiceService {
     );
   }
 
+  getSearchMovie(data: any): Observable<any> {
+    console.log(data, 'movie#');
+
+    return this.http.get(
+      `${this.baseurl}/search/movie?api_key=${this.apikey}&query=${data.movieName}`
+    );
+  }
+
   getMovies() {
     return this.http.get(
       'https://api.themoviedb.org/3/movie/popular?api_key=82e309254331f8d8f952fabdb0d32305&language=en-US&page=2'
