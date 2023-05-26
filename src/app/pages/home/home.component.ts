@@ -10,10 +10,13 @@ import { MovieApiServiceService } from 'src/app/services/movie-api-service.servi
 export class HomeComponent implements OnInit {
   movies: any;
   hideContent = false;
+  bannerResult: any;
 
   constructor(private route: Router, private service: MovieApiServiceService) {}
 
   ngOnInit(): void {
+    this.bannerData();
+
     if (this.route.url.includes('/movie-details')) {
       this.hideContent = true;
     }
@@ -26,6 +29,13 @@ export class HomeComponent implements OnInit {
         console.log(err);
       }
     );
+  }
+
+  bannerData() {
+    this.service.bannerApiData().subscribe((result) => {
+      console.log(result, 'bannerresult#');
+      this.bannerResult = result.results;
+    });
   }
 
   movieDetails(id: number) {
