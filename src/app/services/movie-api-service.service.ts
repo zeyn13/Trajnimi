@@ -29,6 +29,12 @@ export class MovieApiServiceService {
     );
   }
 
+  getMovieDetails(id: number) {
+    return this.http.get(
+      `https://api.themoviedb.org/3/movie/${id}?api_key=82e309254331f8d8f952fabdb0d32305&language=en-US`
+    );
+  }
+
   getMovies() {
     return this.http.get(
       'https://api.themoviedb.org/3/movie/popular?api_key=82e309254331f8d8f952fabdb0d32305&language=en-US&page=2'

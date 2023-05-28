@@ -6,8 +6,12 @@ import { MovieDetailsComponent } from './pages/movie-details/movie-details.compo
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  {
+    path: 'home',
+    component: HomeComponent,
+    children: [{ path: 'movie-details/:id', component: MovieDetailsComponent }],
+  },
   { path: 'search', component: SearchComponent },
-  { path: 'movie/:id', component: MovieDetailsComponent },
 ];
 
 @NgModule({

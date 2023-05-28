@@ -1,0 +1,25 @@
+.title {
+  color: #e50914;
+}
+
+.overview {
+  color: white;
+}
+
+.lan {
+  color: red;
+}
+
+.vote {
+  color: blue;
+}
+
+.px-2 {
+  color: green;
+}
+/*
+.background-container {
+  background: url("https://www.themoviedb.org/t/p/w600_and_h900_bestv2")
+    no-repeat center center fixed;
+  background-size: cover;
+} */

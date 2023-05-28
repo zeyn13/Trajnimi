@@ -1,1 +1,32 @@
-<p>movie-details works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img
+        style="width: 100%"
+        src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2{{
+          this.movieDetails?.poster_path
+        }}"
+      />
+    </div>
+
+    <div class="col-md-8">
+      <h1 class="title">{{ this.movieDetails?.title }}</h1>
+
+      <h4 class="overview">{{ this.movieDetails?.overview }}</h4>
+      <div class="d-flex">
+        <h5 class="px-2" *ngFor="let genre of this.movieDetails?.genres">
+          {{ genre.name }}
+        </h5>
+      </div>
+      <div class="lan">
+        <h4>Original language: {{ this.movieDetails?.original_language }}</h4>
+      </div>
+      <div class="lan">
+        <h4>popularity: {{ this.movieDetails?.popularity }}</h4>
+      </div>
+      <div class="vote">
+        Vote average: {{ this.movieDetails?.vote_average }}
+      </div>
+    </div>
+  </div>
+</div>

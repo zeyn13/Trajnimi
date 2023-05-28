@@ -41,11 +41,4 @@ export class HomeComponent implements OnInit {
   movieDetails(id: number) {
     this.route.navigateByUrl(`home/movie-details/${id}`);
   }
-
-  // bannerData() {
-  //   this.service.bannerApiData().subscribe((result) => {
-  //     console.log(result, 'banner');
-  //     this.bannerResult = result;
-  //   });
-  // }
 }
