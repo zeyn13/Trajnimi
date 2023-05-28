@@ -9,6 +9,7 @@ import { MovieDetailsComponent } from './pages/movie-details/movie-details.compo
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { NavBarComponent } from './pages/nav-bar/nav-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +17,7 @@ import { LoginComponent } from './login/login.component';
     SearchComponent,
     MovieDetailsComponent,
     LoginComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,
