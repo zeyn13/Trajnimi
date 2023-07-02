@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MovieApiServiceService } from 'src/app/services/movie-api-service.service';
+import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
   selector: 'app-movie-details',
@@ -10,7 +10,7 @@ import { MovieApiServiceService } from 'src/app/services/movie-api-service.servi
 export class MovieDetailsComponent implements OnInit {
   constructor(
     private router: ActivatedRoute,
-    private movieService: MovieApiServiceService
+    private movieService: MoviesService
   ) {}
 
   movieDetails: any;

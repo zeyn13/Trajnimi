@@ -26,6 +26,10 @@ body {
   margin-top: 100px;
 }
 
+.color {
+  color: white;
+}
+
 .box input[type="text"],
 .box input[type="password"] {
   border: 0;
@@ -33,7 +37,7 @@ body {
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #3498db;
+  border: 2px solid #e50914;
   padding: 10px 10px;
   width: 250px;
   outline: none;
@@ -51,7 +55,7 @@ body {
 .box input[type="text"]:focus,
 .box input[type="password"]:focus {
   width: 300px;
-  border-color: #2ecc71;
+  border-color: #e50914;
 }
 
 .box input[type="submit"] {
@@ -60,7 +64,7 @@ body {
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #2ecc71;
+  border: 2px solid rgb(204, 202, 202);
   padding: 14px 40px;
   outline: none;
   color: white;
@@ -70,7 +74,7 @@ body {
 }
 
 .box input[type="submit"]:hover {
-  background: #2ecc71;
+  background: #e50914;
 }
 
 .forgot {
@@ -88,9 +92,15 @@ ul.social-network li {
   display: inline;
   margin: 0 5px;
 }
+.icoTwitter,
+.icoGoogle,
+.icoFacebook {
+  background-color: rgb(32, 31, 31);
+}
 
 .social-network a.icoFacebook:hover {
   background-color: #3b5998;
+  color: white;
 }
 
 .social-network a.icoTwitter:hover {
